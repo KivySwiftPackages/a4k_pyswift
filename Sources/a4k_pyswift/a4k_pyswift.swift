@@ -21,7 +21,7 @@ public protocol AdmobListener: NSObject, AdmobDelegates, PyDeserialize {
 }
 
 @PyModule
-struct Admob4ios: PyModuleProtocol {
+struct a4k_pyswift: PyModuleProtocol {
  
     
     static var py_classes: [any (PyClassProtocol & AnyObject).Type] = [
@@ -31,7 +31,7 @@ struct Admob4ios: PyModuleProtocol {
 
 public extension PySwiftModuleImport {
     
-    static let admob4ios: PySwiftModuleImport = .init(name: "admob4kivy_ios", module: Admob4ios.py_init)
+    //static let admob4ios: PySwiftModuleImport = .init(name: "admob4kivy_ios", module: Admob4ios.py_init)
     
-    static let a4k_pyswift: PySwiftModuleImport = .init(name: "a4k_pyswift", module: Admob4ios.py_init)
+    static let a4k_pyswift: PySwiftModuleImport = .init(name: "a4k_pyswift", module: a4k_pyswift.py_init)
 }
