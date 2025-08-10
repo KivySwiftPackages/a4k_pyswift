@@ -16,7 +16,7 @@ let package_dependencies: [Package.Dependency] = [
 
 let package_targets: [Target] = [
     .target(
-        name: "Admob4Kivy_iOS",
+        name: "a4k_pyswift",
         dependencies: [
             .product(name: "SwiftonizeModules", package: "PySwiftKit"),
             // add other package products or internal targets
@@ -31,7 +31,7 @@ let package_targets: [Target] = [
 
 
 let package = Package(
-    name: "Admob4Kivy_iOS",
+    name: "a4k_pyswift",
     platforms: [
         .iOS(.v13),
         .macOS(.v11)
@@ -39,8 +39,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Admob4Kivy_iOS",
-            targets: ["Admob4Kivy_iOS"]),
+            name: "a4k_pyswift",
+            targets: ["a4k_pyswift"]),
     ],
     dependencies: package_dependencies,
     targets: package_targets
